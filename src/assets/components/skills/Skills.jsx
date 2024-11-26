@@ -127,12 +127,12 @@ const Skills = () => {
         <Desc>Here are some of my skills on which I have been working on for the past 2 years.
         </Desc>
         <SkillsContainer>
-          {skills.map((item) => (
-            <Skill>
+          {skills.map((item, index) => (
+            <Skill key={index}>
               <SkillTitle>{item.title}</SkillTitle>
               <SkillList>
-                {item.skills.map((skill) => (
-                  <SkillItem>
+                {item.skills.map((skill, subIndex) => (
+                  <SkillItem key={subIndex}>
                     <SkillImage src={skill.image} />
                     {skill.name}
                   </SkillItem>

@@ -129,24 +129,25 @@ const Span = styled.div`
 `;
 
 const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light + 99};
-    transition: all 0.6s ease-in-out;
-    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+  background: ${({ theme }) => theme.card_light + 99};
+  transition: all 0.6s ease-in-out;
+  transform: ${({ $isOpen }) => ($isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ $isOpen }) => ($isOpen ? '100%' : '0')};
+  z-index: ${({ $isOpen }) => ($isOpen ? '1000' : '-1000')};
 `;
+
+
 
 const MobileMenuLink = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
@@ -202,7 +203,7 @@ const NavBar = () => {
           <GitHubButton>Perfil GitHub</GitHubButton>
         </ButtonContainer>
       </NavContainer>
-      <MobileMenu isOpen={isOpen}> 
+      <MobileMenu $isOpen={isOpen}> 
         {["perfil", "habilidades", "experiencia", "proyectos", "educacion"].map(
           (section) => (
             <MobileMenuLink
