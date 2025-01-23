@@ -155,14 +155,14 @@ const Contact = () => {
         <Container>
             <Wrapper>
                 <Title>Contacto</Title>
-                <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+                <Desc>¡No dudes en comunicarte conmigo si tienes alguna pregunta u oportunidad!</Desc>
                 <ContactForm ref={form} onSubmit={handleSubmit}>
-                    <ContactTitle>Email Me 🚀</ContactTitle>
-                    <ContactInput placeholder="Your Email" name="from_email" />
-                    <ContactInput placeholder="Your Name" name="from_name" />
-                    <ContactInput placeholder="Subject" name="subject" />
-                    <ContactInputMessage placeholder="Message" rows="4" name="message" />
-                    <ContactButton type="submit" value="Send" />
+                    <ContactTitle>Envíame un correo electrónico 🚀</ContactTitle>
+                    <ContactInput placeholder="Tu Email" name="from_email" />
+                    <ContactInput placeholder="Tu nombre" name="from_name" />
+                    <ContactInput placeholder="Asunto" name="subject" />
+                    <ContactInputMessage placeholder="Mensaje" rows="4" name="message" />
+                    <ContactButton type="submit" value="Enviar" />
                 </ContactForm>
                 <Snackbar
                     open={open}

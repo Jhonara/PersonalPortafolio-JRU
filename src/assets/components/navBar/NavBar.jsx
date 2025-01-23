@@ -98,7 +98,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const GitHubButton = styled.button`
+const GitHubButton = styled.a`
   background-color: transparent;
   color: ${({ theme }) => theme.primary};
   border: 1.8px solid ${({ theme }) => theme.primary};
@@ -200,7 +200,10 @@ const NavBar = () => {
           <NavLink href="#educacion">Educación</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton>Perfil GitHub</GitHubButton>
+          <GitHubButton href="https://github.com/Jhonara"
+          target="_blank"
+        rel="noopener noreferrer"
+        >Perfil GitHub</GitHubButton>
         </ButtonContainer>
       </NavContainer>
       <MobileMenu $isOpen={isOpen}> 
@@ -222,10 +225,11 @@ const NavBar = () => {
             color: "white",
             width: "max-content",
           }}
-          href="/"
+          href="https://github.com/Jhonara"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          GitHub Profile
+          Perfil GitHub
         </GitHubButton>
       </MobileMenu>
     </Nav>

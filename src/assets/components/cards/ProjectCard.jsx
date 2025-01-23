@@ -97,6 +97,15 @@ const Description = styled.div`
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 `
+const DescriptionWeb = styled.div`
+  font-size: 12px;
+    margin-left: 2px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_secondary + 80};
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+    }
+`
 
 const Avatar = styled.img`
     width: 38px;
@@ -121,6 +130,12 @@ const ProjectCard = ({ project }) => {
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
+            </Details>
+            <Details>
+                <Title>Link:</Title>
+                <a href={project.webapp} target="_blank" rel="noopener noreferrer">
+                <DescriptionWeb>{project.webapp}</DescriptionWeb>
+                </a>
             </Details>
             <Members>
                 {project.member?.map((member, index) => (

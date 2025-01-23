@@ -137,7 +137,7 @@ const Span = styled.span`
 `;
 
 const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};

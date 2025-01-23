@@ -76,7 +76,7 @@ const Experience = () => {
         <Container id='experiencia'>
             <Wrapper>
                 <Title>Experiencia</Title>
-                <Desc>Here are some of my proyects</Desc>
+                <Desc>En esta sección encontrarás mi experiencia laboral, destacando los roles en los que he aplicado mis conocimientos y habilidades. Cada experiencia ha contribuido a mi crecimiento como profesional, permitiéndome enfrentar desafíos reales y aportar soluciones efectivas.</Desc>
                 <TimeLineSection>
                     <Timeline>{experiences.map((experience, index) => (
                         <TimelineItem key={index}>

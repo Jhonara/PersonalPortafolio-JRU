@@ -116,7 +116,7 @@ const Proyects = () => {
         <Container id='proyectos'>
             <Wrapper>
                 <Title>Proyectos</Title>
-                <Desc>Here are some of my skills on which I have been working on for the past 2 years.
+                <Desc>Aquí te presento los proyectos en los que he trabajado, cada uno representando un paso importante en mi crecimiento como desarrollador. Aunque no son muchos, estos proyectos me han permitido aplicar y reforzar mis conocimientos en tecnología, enfrentar desafíos y aprender nuevas herramientas y metodologías para crear soluciones.
                 </Desc>
                 <ToggleGroup>
                     {toggle === "all" ? (

@@ -76,7 +76,7 @@ const Education = () => {
     <Container id='educacion'>
       <Wrapper>
         <Title>Educacion - Certificados</Title>
-        <Desc>Here are some of my proyects</Desc>
+        <Desc>Aquí encontrarás un resumen de mi formación académica y diplomas obtenidos, que reflejan mi compromiso con el aprendizaje constante y mi crecimiento en el campo del desarrollo de software.</Desc>
         <TimeLineSection>
           <Timeline>
             {education.map((education, index) => (
