@@ -300,7 +300,7 @@ export const Bio = {
       ],
       category: "web app",
       github: "https://github.com/Jhonara/pokedex-react",
-      webapp: "https://github.com/Jhonara/pokedex-react",
+      webapp: "https://pokemon-api-jru.netlify.app",
     },
     {
       id: 0,
@@ -332,7 +332,7 @@ export const Bio = {
       ],
       category: "web app",
       github: "https://github.com/Jhonara/Pagina-CoopV2",
-      webapp: "https://github.com/Jhonara/Pagina-CoopV2",
+      webapp: "https://compartirv2-coop-jru.netlify.app",
     },
     {
       id: 2,

@@ -137,6 +137,12 @@ const ProjectCard = ({ project }) => {
                 <DescriptionWeb>{project.webapp}</DescriptionWeb>
                 </a>
             </Details>
+            <Details>
+                <Title>Github:</Title>
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <DescriptionWeb>{project.github}</DescriptionWeb>
+                </a>
+            </Details>
             <Members>
                 {project.member?.map((member, index) => (
                     <Avatar key={index} src={member.img} />
